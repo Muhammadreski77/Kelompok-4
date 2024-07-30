@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Universitas Handayani Makassar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0044cc;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .container {
+            padding: 2em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img, .gallery iframe {
+            width: calc(33.333% - 10px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-top: 2em;
+        }
+        .follow-us {
+            margin-top: 2em;
+        }
+        .social-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #0044cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeri Universitas Handayani Makassar</h1>
+    </header>
+    <div class="container">
+        <h2>Foto dan Video Kampus, Kegiatan, dan Fasilitas</h2>
+        <div class="gallery">
+            <!-- Gambar-gambar -->
+            <img src="Kampus.jpg" alt="Kampus 1">
+            <img src="gambar1.jpg" alt="Kampus 2">
+            <img src="gambar2.jpg" alt="Kampus 3">
+            <img src="gambar3.jpg" alt="Kampus 4">
+            <img src="gambar4.jpg" alt="Kampus 5">
+            <img src="gambar5.jpg" alt="Kampus 6">
+            <!-- Video-video -->
+            <iframe src="https://www.youtube.com/embed/ALB3ll1zrM4" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/pchfuoHCWPA" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/insert_video_id_here" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>Tentang Universitas Handayani Makassar</h2>
+        <p>
+            Universitas Handayani Makassar adalah Lembaga Pendidikan Tinggi di Kopertis Wil. IX yang didirikan pada tahun 1996.
+            Sejak tahun 2013 menyelenggarakan program Magister Komputer (M.Kom) yang pertama di Indonesia Timur.
+        </p>
+
+        <div class="contact-info">
+            <h3>Kontak Kami</h3>
+            <p>Jl. Adhyaksa Baru No. 1, Telp. (0411) 4673395 Makassar - Sulawesi Selatan Indonesia</p>
+            <p>Email : <a href="mailto:info@handayani.ac.id">info@handayani.ac.id</a></p>
+        </div>
+
+        <div class="follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/universitashandayani" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com/universitashandayani" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/universitashandayani" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/school/universitashandayani" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
