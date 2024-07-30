@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Kontak dan Informasi Kontak Kampus</title>
+<link rel="stylesheet" href="kontak.css">
+</head>
+<body>
+    <nav>
+        <img src="mainlogo.png" alt="Logo" class="logo">
+        <a href="homepage" onclick="showSection('home')">Home Page</a>
+       
+        <a href="about.html" onclick="showSection('about')">About</a>
+        <a href="#about" onclick="showSection('about')">About</a>
+        <a href="#dapartments" onclick="showSection('dapartments')">Dapartments</a>
+        <a href="#news and event" onclick="showSection('news and event')">News And Event</a>
+        <a href="#gallery" onclick="showSection('gallery')">Gallery</a>
+        <a href="kontak.html" onclick="showSection('contact')">Contact</a>
+        <a href="#pendaftaran.html" onclick="showSection('Addmision')">Addmision</a>
+    </nav>
+    
+
+<div class="container">
+    <h2>Formulir Kontak</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="namaLengkap">Nama Lengkap:</label>
+            <input type="text" id="namaLengkap" name="namaLengkap" required>
+        </div>
+        <div class="form-group">
+            <label for="alamatEmail">Alamat Email:</label>
+            <input type="email" id="alamatEmail" name="alamatEmail" required>
+        </div>
+        <div class="form-group">
+            <label for="nomorTelepon">Nomor Telepon:</label>
+            <input type="tel" id="nomorTelepon" name="nomorTelepon" required>
+        </div>
+        <div class="form-group">
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+        </div>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <h2>Informasi Kontak Kampus</h2>
+    <div class="contact-info">
+        <p><strong>Alamat Kampus:</strong> Jl. Adhyaksa Baru No. 1 Makassar, Sulawesi - Selatan
+        </p>
+        <p><strong>Nomor Telepon Kampus:</strong> (0411) 4673395</p>
+        <p><strong>Alamat Email Kampus:</strong> Info@handayani.ac.id</p>
+    </div>
+</div>
+<script>
+    function showSection(sectionId) {
+        // Menyembunyikan semua section
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        // Menampilkan section yang dipilih
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+</body>
+</html>
