@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Universitas Handayani Makassar</title>
+        <link rel="stylesheet" href="css.css">
+
+        <body>
+            <nav>
+                <img src="logoniv.jpg" alt="Logo" class="logo">
+                <a href="#home" onclick="showSection('home')">Home</a>
+                <a href="#about" onclick="showSection('about')">About</a>
+                <a href="#dapartments" onclick="showSection('dapartments')">Dapartments</a>
+                <a href="#news and event" onclick="showSection('news and event')">News and Event</a>
+                <a href="#gallery" onclick="showSection('gallery')">Gallery</a>
+                <a href="#contact" onclick="showSection('contact')">Contact</a>
+                <a href="#registrasi" onclick="showSection('registrasi')">Regsitration</a>
+                </nav>
+
+            <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    slides[slideIndex-1].style.display = "block";  
+                    setTimeout(showSlides, 4000); 
+                }
+                </script>
+                </section>
+
+                <script>
+                    function showSection(sectionId) {
+                        const sections = document.querySelectorAll('section');
+                        sections.forEach(section => {
+                            section.classList.remove('active');
+                        });
+                        document.getElementById(sectionId).classList.add('active');
+                    }
+                </script>
+
+            <div class="container">
+                <img src="foto1.jpg" alt="Gambar">
+            </div> 
+            <br>
+            <center>
+                <h3><b>SELAMAT DATANG DI UNIVERSITAS HANDAYANI MAKASSAR</b></h3>
+                <hr>
+                <p>Universitas Handayani Makassar (UHM) adalah sebuah perguruan tinggi swasta yang fokus pada bidang informatika, 
+                    komputer, manajemen dan bisnis berbasis teknologi informasi, serta hukum dan ilmu sosial. Terletak di Kota Makassar, 
+                    Sulawesi Selatan, UHM dioperasikan di bawah naungan Yayasan Doktor Haji Alifuddin (sebelumnya dikenal sebagai Yayasan 
+                    Pendidikan Handayani) </p>
+                <br>
+
+                <video src="https://www.youtube.com/v/lsO5igRUtSo.mp4"
+                width="840" height="480 " controls></video>
+
+            </center> 
+         
+        </body>
+    </head>
+</html>
 
